@@ -44,7 +44,7 @@ int genRand(int min, int max) {
 
 
 //print out our array to console
-void printArray(int[] arr, int length) {
+void printArray(int arr[], int length) {
   
     for(int i = 0; i < arrSize; i++) {
         printf("%i | ", arr[i]);
@@ -56,7 +56,7 @@ void printArray(int[] arr, int length) {
 
 
 //sort an array using bubble sort - O(n2)
-void bubbleSort(int[] arr, int length) {
+void bubbleSort(int arr[], int length) {
 
     int tmp;
     for(int i = length - 1; i > 0; i--) {
