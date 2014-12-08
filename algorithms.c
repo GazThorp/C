@@ -17,8 +17,14 @@ int main(void) {
     for(int i = 0; i < length); i++) {
         arr[i] = genRand(1, 20);  
     }
+    
+    printf("unsorted array:\n");
+    printArray(arr, arrLen);
 
-    prinArray(arr, arrLen);
+    printf("bubble sorted array:\n");
+    bubbleSort(arr, arrLen);
+    printArray(arr, arrLen);
+
 
     return 0;
 }
@@ -39,10 +45,12 @@ int genRand(int min, int max) {
 
 //print out our array to console
 void printArray(int[] arr, int length) {
-
+  
     for(int i = 0; i < arrSize; i++) {
         printf("%i | ", arr[i]);
     }
+    
+    printf("\n");
 
 }
 
